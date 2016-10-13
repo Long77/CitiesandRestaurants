@@ -4,21 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CitiesandRestaurants
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+
             var Houston = new City("Houston");
-            var HouLat = new Latlng.lats(29.75);
-            var HouLng = new Latlng.lngs(-95.26);
-            var AusLat = new Latlng();
-            var AusLng = new Latlng();
+
             var NewOrleans = new City("New Orleans");
-            var NolaLat = new Latlng();
-            var NolaLng = new Latlng();
+
             var Austin = new City("Austin");
             var Montrose = new Neighborhood("Montrose");
             var Midtown = new Neighborhood("Midtown");
@@ -44,13 +41,13 @@ namespace CitiesandRestaurants
             var Down = new Restaurant(name: "DownHouse", websiteUrl: "http://treadsack.com/downhouse/");
             var Row = new Restaurant(name: "Eight Row Flint", websiteUrl: "http://eightrowflint.com/");
             var Teo = new Restaurant(name: "Teotihuacan", websiteUrl: "http://www.teomexicancafe.com/");
-            var BB = new Restaurant(name:"BB's Cafe", websiteUrl: "http://bbscafe.com/locations/heights/");
+            var BB = new Restaurant(name: "BB's Cafe", websiteUrl: "http://bbscafe.com/locations/heights/");
             var Blue = new Restaurant(name: "Blue Dahlia Bistro", websiteUrl: "http://www.bluedahliabistro.com/");
-            var Easy = new Restaurant(name:"Easy Tiger", websiteUrl: "http://easytigeraustin.com/");
+            var Easy = new Restaurant(name: "Easy Tiger", websiteUrl: "http://easytigeraustin.com/");
             var PF = new Restaurant(name: "PF Chang's", websiteUrl: "https://www.pfchangs.com/texas/1800-austin-arboretum");
-            var New = new Restaurant(name:"New Fortune", websiteUrl: "http://www.newfortuneseafood.com/");
+            var New = new Restaurant(name: "New Fortune", websiteUrl: "http://www.newfortuneseafood.com/");
             var Tom = new Restaurant(name: "Tomodachi Sushi", websiteUrl: "http://www.tomosushiaustin.com/");
-            var Tita = new Restaurant(name:"Titaya's", websiteUrl: "http://titayasthaicuisine.com/");
+            var Tita = new Restaurant(name: "Titaya's", websiteUrl: "http://titayasthaicuisine.com/");
             var Kor = new Restaurant(name: "Koriente", websiteUrl: "http://www.koriente.com/");
             var Car = new Restaurant(name: "Carmelo's", websiteUrl: "http://www.carmelosrestaurant.com/austin");
             var Komfort = new Restaurant("Korean Komfort Food", websiteUrl: "https://twitter.com/koreankomfort");
@@ -74,6 +71,8 @@ namespace CitiesandRestaurants
             Austin.neighboringCities.Add(Houston);
             Austin.neighboringCities.Add(NewOrleans);
 
+
+
             Houston.burroughs.Add(Montrose);
             Houston.burroughs.Add(Midtown);
             Houston.burroughs.Add(EastDowntown);
@@ -90,7 +89,7 @@ namespace CitiesandRestaurants
             NewOrleans.burroughs.Add(Uptown);
             NewOrleans.burroughs.Add(Downtown);
 
-            
+
             Montrose.restaurants.Add(Poscol);
             Montrose.restaurants.Add(Brazil);
             EastDowntown.restaurants.Add(Moon);
@@ -124,14 +123,15 @@ namespace CitiesandRestaurants
             Downtown.restaurants.Add(Coch);
             Downtown.restaurants.Add(Cleo);
 
+
             
 
 
-            Console.WriteLine("Restaurants in Montrose: {0}", Montrose);
+       
             Console.ReadLine();
 
         }
-       
+      
         class City
         {
             public string name;
@@ -144,8 +144,8 @@ namespace CitiesandRestaurants
             public List<City> neighboringCities = new List<City>();
             public List<Neighborhood> burroughs = new List<Neighborhood>();
             public List<Restaurant> restaurants = new List<Restaurant>();
-            public List<Latlng> lats = new List<Latlng>();
-            public List<Latlng> lngs = new List<Latlng>();
+       //     public List<Latlng> lats = new List<Latlng>();
+       //     public List<Latlng> lngs = new List<Latlng>();
             public override string ToString()
             {
                 string result = "";
@@ -163,7 +163,7 @@ namespace CitiesandRestaurants
         class Neighborhood
         {
             public string name;
-            public City city;
+        //    public City city;
             public Neighborhood(string name)
             {
                 this.name = name;
@@ -192,10 +192,10 @@ namespace CitiesandRestaurants
                 this.name = name;
                 this.websiteUrl = websiteUrl;
             }
-            public string address;
+        /*    public string address; */
             public string websiteUrl;
-            Category type;
-            public List<Address> addresses = new List<Address>();
+         //   Category type;
+        //    public List<Address> addresses = new List<Address>();
             public List<Restaurant> restaurants = new List<Restaurant>();
             public override string ToString()
             {
@@ -209,9 +209,9 @@ namespace CitiesandRestaurants
         }
 
 
-        class Latlng
+    /*    class Latlng
         {
-            double Lats;
+            double
             double Lngs;
             public List<Latlng> lats = new List<Latlng>();
             public List<Latlng> lngs = new List<Latlng>();
@@ -223,7 +223,7 @@ namespace CitiesandRestaurants
             public string StreetAddress;
             public int zip;
             public City city;
-        }
+        } */
         public enum Category
         {
             Italian,
