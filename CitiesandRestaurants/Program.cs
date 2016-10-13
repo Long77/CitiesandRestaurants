@@ -101,6 +101,17 @@ namespace CitiesandRestaurants
             NearNorth.restaurants.Add(Teo);
             NearNorth.restaurants.Add(BB);
 
+            Houston.restaurants.Add(Poscol);
+            Houston.restaurants.Add(Brazil);
+            Houston.restaurants.Add(Moon);
+            Houston.restaurants.Add(Ninfas);
+            Houston.restaurants.Add(Celcius);
+            Houston.restaurants.Add(Mon);
+            Houston.restaurants.Add(Down);
+            Houston.restaurants.Add(Row);
+            Houston.restaurants.Add(Teo);
+            Houston.restaurants.Add(BB);
+
             EastSide.restaurants.Add(Blue);
             EastSide.restaurants.Add(Easy);
             West.restaurants.Add(PF);
@@ -127,6 +138,7 @@ namespace CitiesandRestaurants
 
 
             Console.WriteLine("Poscol Website: {0}", Poscol.websiteUrl);
+            Console.WriteLine("Houston Neighborhoods: {0}", Houston);
        
             Console.ReadLine();
 
@@ -148,7 +160,7 @@ namespace CitiesandRestaurants
        //     public List<Latlng> lngs = new List<Latlng>();
             public override string ToString()
             {
-                string result = "";
+                string result = "{name}";
                 foreach (City c in neighboringCities)
                 {
                     foreach(Restaurant s in restaurants)
@@ -172,7 +184,7 @@ namespace CitiesandRestaurants
             public List<Neighborhood> burroughs = new List<Neighborhood>();
             public override string ToString()
             {
-                string result = "";
+                string result = "{name}";
                 foreach(Neighborhood n in burroughs)
                 {
                     foreach(Restaurant r in restaurants) { 
@@ -199,7 +211,7 @@ namespace CitiesandRestaurants
             public List<Restaurant> restaurants = new List<Restaurant>();
             public override string ToString()
             {
-                string result = "";
+                string result = "{name}";
                 foreach (Restaurant r in restaurants)
                 {
                     result = result + ", " + r;
