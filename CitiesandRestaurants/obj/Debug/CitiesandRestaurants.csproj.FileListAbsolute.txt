@@ -1,0 +1,6 @@
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\bin\Debug\CitiesandRestaurants.exe.config
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\obj\Debug\CitiesandRestaurants.csprojResolveAssemblyReference.cache
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\bin\Debug\CitiesandRestaurants.exe
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\bin\Debug\CitiesandRestaurants.pdb
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\obj\Debug\CitiesandRestaurants.exe
+C:\Users\shadijam\Code\CitiesandRestaurants\CitiesandRestaurants\obj\Debug\CitiesandRestaurants.pdb
